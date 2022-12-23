@@ -1,6 +1,12 @@
 # Jenkins Compose
 
-This template provides fully setup Jenkins environment for testing [Pipeline Data Extractor Plugin](#).
+This template provides fully setup Jenkins environment for testing [Jenkins Pipeline Data Extractor Plugin](https://gitlab.com/azharhoussen.salim/pipeline-data-extractor-plugin).
+
+Based on the official Docker images from Jenkins:
+
+* [jenkins:2.176.3-jdk11](https://hub.docker.com/layers/jenkins/jenkins/2.176.3-jdk11/images/sha256-8b2fde0554da35eab7817d3d1eec183ec0c3cc7a14870f51e5f5a50fd992cb51?context=explore)
+
+* [ssh-agent:jdk11](https://hub.docker.com/layers/jenkins/ssh-agent/jdk11/images/sha256-7f36437b3347a6afddfc926e97afc203b815ca6a4a4bda08d81ecdd074255523?context=explore)
 
 ## Requirements
 
@@ -8,7 +14,6 @@ This template provides fully setup Jenkins environment for testing [Pipeline Dat
 
 * [Docker Engine](https://docs.docker.com/get-docker/)
 * [Docker Compose](https://docs.docker.com/compose/install/)
-* GB of RAM
 
 By default, Jenkins Compose exposes the port **8082** to Jenkins.
 
