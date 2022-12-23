@@ -4,7 +4,7 @@ services:
     build: ./docker/jenkins/
     privileged: true
     ports:
-      - 8082:8080
+      - "8082:8080"
     container_name: jenkins
   agent:
     build: ./docker/agent
@@ -12,6 +12,6 @@ services:
     user: root
     container_name: agent
     expose:
-      - 22
+      - "22"
     environment:
       - JENKINS_AGENT_SSH_PUBKEY=${JENKINS_AGENT_SSH_PUBKEY}
