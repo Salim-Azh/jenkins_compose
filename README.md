@@ -71,3 +71,10 @@ docker compose down
 ```
 
 ### Setup the SSH agent on Jenkins controller
+
+1. Add new global credentials
+![Credendials form](../media/credentials-config.jpg?raw=true)
+
+2. Create new node
+![Node configuration form](../media/node-config.jpg?raw=true)
+
